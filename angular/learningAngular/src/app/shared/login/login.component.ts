@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.model.username, this.model.password).subscribe((result) => {
       if (result === true) {
         // login successful
-        this.router.navigate(['/']);
+        this.router.navigate(['/user']);
       } else {
         // login failed
         this.error = 'Username or password is incorrect';

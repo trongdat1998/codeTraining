@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './shared/login/login.component';
 import { UserComponent } from './shared/components/user/user.component';
+import { ProductComponent } from './shared/components/product/product.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { UserComponent } from './shared/components/user/user.component';
     AppComponent,
     LoginComponent,
     UserComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,

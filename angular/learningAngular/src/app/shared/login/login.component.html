@@ -1,3 +1,35 @@
-<div class="container">
-  <!-- <img src="https://znews-photo.zingcdn.me/w660/Uploaded/mdf_eioxrd/2021_07_06/2.jpg" > -->
+<div class="login-form container-fluid">
+  <div class="form-content vh-100 full-width">
+    <div class="form-login">
+      <form (ngSubmit)="login()">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            name="username"
+            [(ngModel)]="model.username"
+            #username="ngModel"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            name="password"
+            [(ngModel)]="model.password"
+            #password="ngModel"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">
+            Log in
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
 </div>
